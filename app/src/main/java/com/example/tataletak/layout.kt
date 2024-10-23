@@ -51,6 +51,9 @@ fun TampilanHeader(){
                     color = Color.White,
                     fontSize = 20.sp)
                 Spacer(modifier = Modifier.padding(3.dp))
+                Text(text = "Universitas Muhammadiyah Yogyakarta",
+                    color = Color.White,
+                    fontSize = 17.sp)
             }
         }
     }
