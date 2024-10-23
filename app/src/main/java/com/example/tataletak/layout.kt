@@ -10,5 +10,7 @@ import androidx.compose.ui.tooling.preview.Preview
 @Preview(showBackground = true)
 @Composable
 fun Layout(modifier: Modifier = Modifier){
-
+    Column(modifier = modifier.fillMaxSize()) {
+        TampilanHeader()
+    }
 }
