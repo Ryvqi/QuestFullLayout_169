@@ -30,6 +30,16 @@ import androidx.compose.ui.unit.sp
 fun Layout(modifier: Modifier = Modifier){
     Column(modifier = modifier.fillMaxSize()) {
         TampilanHeader()
+        DetailMahasiswa(
+            judul = "Nama", isinya = "Farhan")
+        DetailMahasiswa(
+            judul = "NIM", isinya = "2020")
+        DetailMahasiswa(
+            judul = "Alamat", isinya = "bantul")
+        DetailMahasiswa(
+            judul = "email", isinya = "Farhan@gmail.com")
+        DetailMahasiswa(
+            judul = "no.hp", isinya = "0822222222221")
     }
 }
 
@@ -38,7 +48,7 @@ fun TampilanHeader(){
     Box(modifier = Modifier.fillMaxWidth().
         background(color = Color.DarkGray)){
         Row {
-            Box(contentAlignment = Alignment.BottomEnd){
+            Box(contentAlignment = Alignment.BottomEnd, modifier = Modifier.padding(10.dp)){
                 Image(painterResource(R.drawable.logo),
                     contentDescription = null)
 
@@ -61,12 +71,12 @@ fun TampilanHeader(){
 }
 
 @Composable
-fun DetailMahasiswa(){
+fun DetailMahasiswa(judul:String, isinya:String){
     Row(modifier = Modifier.fillMaxWidth()
         .padding(16.dp),
         horizontalArrangement = Arrangement.SpaceBetween) {
         Text("Nama", modifier = Modifier.weight(0.8f))
         Text(":", modifier = Modifier.weight(0.2f))
-        Text("Kulo", modifier = Modifier.weight(2f))
+        Text("", modifier = Modifier.weight(2f))
     }
 }
