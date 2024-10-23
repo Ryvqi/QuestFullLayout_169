@@ -75,8 +75,8 @@ fun DetailMahasiswa(judul:String, isinya:String){
     Row(modifier = Modifier.fillMaxWidth()
         .padding(16.dp),
         horizontalArrangement = Arrangement.SpaceBetween) {
-        Text("Nama", modifier = Modifier.weight(0.8f))
+        Text(judul, modifier = Modifier.weight(0.8f))
         Text(":", modifier = Modifier.weight(0.2f))
-        Text("", modifier = Modifier.weight(2f))
+        Text(isinya, modifier = Modifier.weight(2f))
     }
 }
