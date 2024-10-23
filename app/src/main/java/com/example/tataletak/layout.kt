@@ -62,5 +62,11 @@ fun TampilanHeader(){
 
 @Composable
 fun DetailMahasiswa(){
-    
+    Row(modifier = Modifier.fillMaxWidth()
+        .padding(16.dp),
+        horizontalArrangement = Arrangement.SpaceBetween) {
+        Text("Nama", modifier = Modifier.weight(0.8f))
+        Text(":", modifier = Modifier.weight(0.2f))
+        Text("Kulo", modifier = Modifier.weight(2f))
+    }
 }
