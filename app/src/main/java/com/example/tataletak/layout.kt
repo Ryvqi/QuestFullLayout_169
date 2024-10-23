@@ -3,6 +3,7 @@ package com.example.tataletak
 import android.text.Layout
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -38,7 +39,7 @@ fun TampilanHeader(){
         background(color = Color.DarkGray)){
         Row {
             Box(contentAlignment = Alignment.BottomEnd){
-                Image(painterResource(R.drawable.),
+                Image(painterResource(R.drawable.logo),
                     contentDescription = null)
 
                 Icon(Icons.Default.Done,
@@ -57,4 +58,9 @@ fun TampilanHeader(){
             }
         }
     }
+}
+
+@Composable
+fun DetailMahasiswa(){
+    
 }
