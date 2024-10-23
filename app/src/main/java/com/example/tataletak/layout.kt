@@ -14,3 +14,8 @@ fun Layout(modifier: Modifier = Modifier){
         TampilanHeader()
     }
 }
+
+@Composable
+fun TampilanHeader(){
+
+}
